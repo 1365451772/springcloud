@@ -21,4 +21,7 @@ public interface PaymentFeignService {
 
   @GetMapping(value = "/payment/feign/timeout")
   public String paymentFeignTimeout();
+
+
+
 }
