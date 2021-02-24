@@ -49,6 +49,10 @@ public class GateWayConfig {
       }
     }).build();
 
+
+    //lambda表达式
+    routes.route("", predicateSpec -> predicateSpec.path("").uri("")).build();
+
     return routes.build();
   }
 }
