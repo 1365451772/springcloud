@@ -47,7 +47,7 @@ public class GateWayConfig {
       public AsyncBuilder apply(PredicateSpec predicateSpec) {
         return predicateSpec.path("").uri("");
       }
-    });
+    }).build();
 
     return routes.build();
   }
