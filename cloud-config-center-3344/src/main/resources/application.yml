@@ -8,10 +8,14 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:1365451772/springcloud-config.git #GitHub上面的git仓库名字
+#          uri: git@github.com:xxxxxx/springcloud-config.git #GitHub上面的git仓库名字
         ####搜索目录
           search-paths:
             - springcloud-config
+          username: xxxxx
+          password: xxxxxxxxx
+          force-pull: true
+          uri: https://github.com/用户名/springcloud-config.git
       ####读取分支
       label: master
 #rabbitmq相关配置
